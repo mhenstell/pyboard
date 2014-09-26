@@ -28,14 +28,14 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -2111,112 +2111,205 @@ Please make sure your boards conform to these design rules.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="IC1" library="pyboard" package="LQFP64" value="STM32F405RGT" x="17" y="21"/>
-<element name="R1" library="rcl" package="R0603" value="22" x="23" y="32" rot="R270"/>
-<element name="R2" library="rcl" package="R0603" value="22" x="20.75" y="32" rot="R270"/>
+<element name="IC1" library="pyboard" package="LQFP64" value="STM32F405RGT" x="17" y="21">
+<attribute name="PARTNO" value="STM32F405RGT6" x="17" y="21" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R1" library="rcl" package="R0603" value="22" x="23" y="32" rot="R270">
+<attribute name="PARTNO" value="MCR03ERTJ220" x="23" y="32" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="R2" library="rcl" package="R0603" value="22" x="20.75" y="32" rot="R270">
+<attribute name="PARTNO" value="MCR03ERTJ220" x="20.75" y="32" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
 <element name="C3" library="rcl" package="C0603" value="100n" x="24" y="26.75" smashed="yes">
 <attribute name="NAME" x="23.365" y="27.385" size="1.27" layer="25"/>
 <attribute name="VALUE" x="25.25" y="22" size="1.27" layer="27" rot="R90"/>
+<attribute name="PARTNO" value="C0603C104J4RACTU" x="24" y="26.75" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C4" library="rcl" package="C0603" value="100n" x="13" y="29.25" rot="R180"/>
-<element name="C5" library="rcl" package="C0603" value="100n" x="9.75" y="18.5" rot="MR180"/>
+<element name="C4" library="rcl" package="C0603" value="100n" x="13" y="29.25" rot="R180">
+<attribute name="PARTNO" value="C0603C104J4RACTU" x="13" y="29.25" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="C5" library="rcl" package="C0603" value="100n" x="9.75" y="18.5" rot="MR180">
+<attribute name="PARTNO" value="C0603C104J4RACTU" x="9.75" y="18.5" size="1.778" layer="28" rot="MR180" display="off"/>
+</element>
 <element name="C6" library="rcl" package="C0603" value="100n" x="24" y="18.25" smashed="yes" rot="MR90">
 <attribute name="NAME" x="24.635" y="17.615" size="1.27" layer="26" rot="MR90"/>
 <attribute name="VALUE" x="28.635" y="17.845" size="1.27" layer="28" rot="MR0"/>
+<attribute name="PARTNO" value="C0603C104J4RACTU" x="24" y="18.25" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
-<element name="C8" library="rcl" package="C0603" value="100n" x="10.75" y="15" rot="R180"/>
-<element name="C9" library="rcl" package="C0603" value="100n" x="19" y="15" rot="MR0"/>
+<element name="C8" library="rcl" package="C0603" value="100n" x="10.75" y="15" rot="R180">
+<attribute name="PARTNO" value="C0603C104J4RACTU" x="10.75" y="15" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="C9" library="rcl" package="C0603" value="100n" x="19" y="15" rot="MR0">
+<attribute name="PARTNO" value="C0603C104J4RACTU" x="19" y="15" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
 <element name="C1" library="rcl" package="C0603" value="12p" x="17" y="10" smashed="yes" rot="MR90">
 <attribute name="NAME" x="17.635" y="9.365" size="1.27" layer="26" rot="MR90"/>
 <attribute name="VALUE" x="16.845" y="5.365" size="1.27" layer="28" rot="MR90"/>
+<attribute name="PARTNO" value="CL10C120JB8NNNC" x="17" y="10" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
 <element name="C2" library="rcl" package="C0603" value="12p" x="14.75" y="10" smashed="yes" rot="MR90">
 <attribute name="NAME" x="15.385" y="9.365" size="1.27" layer="26" rot="MR90"/>
 <attribute name="VALUE" x="14.845" y="5.365" size="1.27" layer="28" rot="MR90"/>
+<attribute name="PARTNO" value="CL10C120JB8NNNC" x="14.75" y="10" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
-<element name="C10" library="rcl" package="C0603" value="1u" x="19" y="17.5" rot="MR0"/>
-<element name="C7" library="rcl" package="C0603" value="4u7" x="19" y="19.75" rot="MR0"/>
+<element name="C10" library="rcl" package="C0603" value="1u" x="19" y="17.5" rot="MR0">
+<attribute name="PARTNO" value="YNA18B2C0G105M" x="19" y="17.5" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
+<element name="C7" library="rcl" package="C0603" value="4u7" x="19" y="19.75" rot="MR0">
+<attribute name="PARTNO" value="CL10B475KQ8NQNC" x="19" y="19.75" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
 <element name="R3" library="rcl" package="R0603" value="4k7" x="9.5" y="8" smashed="yes" rot="MR270">
 <attribute name="NAME" x="8.865" y="8.635" size="1.27" layer="26" rot="MR270"/>
 <attribute name="VALUE" x="8.115" y="10.905" size="1.27" layer="28" rot="MR180"/>
+<attribute name="PARTNO" value="RC0603JR-074K7L" x="9.5" y="8" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="C12B" library="rcl" package="C0603" value="2u2" x="24" y="22.25" smashed="yes" rot="MR270">
 <attribute name="NAME" x="23.365" y="22.885" size="1.27" layer="26" rot="MR270"/>
 <attribute name="VALUE" x="24.865" y="22.155" size="1.27" layer="28" rot="MR180"/>
+<attribute name="PARTNO" value="LMK107B7225KA-T" x="24" y="22.25" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="C11B" library="rcl" package="C0603" value="2u2" x="16.25" y="22.75" smashed="yes" rot="MR270">
 <attribute name="NAME" x="15.615" y="23.385" size="1.27" layer="26" rot="MR270"/>
 <attribute name="VALUE" x="17.115" y="23.405" size="1.27" layer="28" rot="MR180"/>
+<attribute name="PARTNO" value="LMK107B7225KA-T" x="16.25" y="22.75" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
-<element name="R6" library="rcl" package="R0603" value="560" x="27.625" y="20.95" rot="MR90"/>
+<element name="R6" library="rcl" package="R0603" value="560" x="27.625" y="20.95" rot="MR90">
+<attribute name="PARTNO" value="RC0603FR-07560RL" x="27.625" y="20.95" size="1.778" layer="28" rot="MR90" display="off"/>
+</element>
 <element name="C13" library="rcl" package="C0603" value="100n" x="7.25" y="7" smashed="yes" rot="MR90">
 <attribute name="NAME" x="7.885" y="6.365" size="1.27" layer="26" rot="MR90"/>
 <attribute name="VALUE" x="8.885" y="4.095" size="1.27" layer="28" rot="MR0"/>
+<attribute name="PARTNO" value="C0603C104J4RACTU" x="7.25" y="7" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
-<element name="U$2" library="pyboard" package="KMR4SWITCH" value="KMR4TACTILE" x="9.5" y="7"/>
-<element name="U$3" library="pyboard" package="KMR4SWITCH" value="KMR4TACTILE" x="9.5" y="12"/>
-<element name="U$4" library="pyboard" package="MOLEX-SD-105027-PKG" value="MOLEX-SD-105027" x="11.5" y="31.25" rot="R180"/>
-<element name="U$5" library="pyboard" package="DFN10" value="MMA7660" x="9.75" y="31" rot="MR270"/>
+<element name="U$2" library="pyboard" package="KMR4SWITCH" value="KMR4TACTILE" x="9.5" y="7">
+<attribute name="PARTNO" value="KMR442G LFS" x="9.5" y="7" size="1.778" layer="27" display="off"/>
+</element>
+<element name="U$3" library="pyboard" package="KMR4SWITCH" value="KMR4TACTILE" x="9.5" y="12">
+<attribute name="PARTNO" value="KMR442G LFS" x="9.5" y="12" size="1.778" layer="27" display="off"/>
+</element>
+<element name="U$4" library="pyboard" package="MOLEX-SD-105027-PKG" value="MOLEX-SD-105027" x="11.5" y="31.25" rot="R180">
+<attribute name="PARTNO" value="1050270001" x="11.5" y="31.25" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="U$5" library="pyboard" package="DFN10" value="MMA7660" x="9.75" y="31" rot="MR270">
+<attribute name="PARTNO" value="MMA7660FCR1" x="9.75" y="31" size="1.778" layer="28" rot="MR270" display="off"/>
+</element>
 <element name="C14" library="rcl" package="C0603" value="100n" x="10" y="33.75" smashed="yes" rot="MR0">
 <attribute name="NAME" x="10.635" y="34.385" size="1.27" layer="26" rot="MR0"/>
 <attribute name="VALUE" x="11.885" y="34.595" size="1.27" layer="28" rot="MR0"/>
+<attribute name="PARTNO" value="C0603C104J4RACTU" x="10" y="33.75" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="C15" library="rcl" package="C0603" value="100n" x="9.75" y="28.25" smashed="yes" rot="MR180">
 <attribute name="NAME" x="9.115" y="27.615" size="1.27" layer="26" rot="MR180"/>
 <attribute name="VALUE" x="7.865" y="27.405" size="1.27" layer="28" rot="MR180"/>
+<attribute name="PARTNO" value="C0603C104J4RACTU" x="9.75" y="28.25" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="R8" library="rcl" package="R0603" value="4k7" x="10.75" y="23.25" smashed="yes" rot="MR90">
 <attribute name="NAME" x="11.385" y="22.615" size="1.27" layer="26" rot="MR90"/>
 <attribute name="VALUE" x="14.385" y="22.595" size="1.27" layer="28" rot="MR0"/>
+<attribute name="PARTNO" value="RC0603JR-074K7L" x="10.75" y="23.25" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
 <element name="R9" library="rcl" package="R0603" value="4k7" x="13" y="31" smashed="yes" rot="MR90">
 <attribute name="NAME" x="13.635" y="30.365" size="1.27" layer="26" rot="MR90"/>
 <attribute name="VALUE" x="16.635" y="30.595" size="1.27" layer="28" rot="MR0"/>
+<attribute name="PARTNO" value="RC0603JR-074K7L" x="13" y="31" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
-<element name="R10" library="rcl" package="R0603" value="560R" x="25.25" y="32" rot="R270"/>
-<element name="C11" library="rcl" package="C0603" value="2p2" x="6.75" y="12.75" rot="MR180"/>
-<element name="C12" library="rcl" package="C0603" value="2p2" x="6.75" y="15.25" rot="MR180"/>
-<element name="Q1" library="pyboard" package="TXC-SMD-50X32" value="8MHz" x="16" y="10.25"/>
-<element name="Q2" library="pyboard" package="TXC-SMD-32X15" value="32.768kHz" x="9.75" y="14" rot="MR270"/>
-<element name="U1" library="pyboard" package="SOT-23-5" value="MCP1802" x="24.75" y="30.5" rot="MR270"/>
-<element name="C16" library="rcl" package="C0603" value="2u2" x="28.25" y="30.5" rot="MR270"/>
-<element name="C17" library="rcl" package="C0603" value="2u2" x="27.5" y="27.75" rot="MR180"/>
-<element name="D1" library="pyboard" package="SOD-123" value="1N5819" x="24" y="38.25" rot="MR180"/>
+<element name="R10" library="rcl" package="R0603" value="560R" x="25.25" y="32" rot="R270">
+<attribute name="PARTNO" value="RC0603FR-07560RL" x="25.25" y="32" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="C11" library="rcl" package="C0603" value="2p2" x="6.75" y="12.75" rot="MR180">
+<attribute name="PARTNO" value="CL10C2R2CB8NNNC" x="6.75" y="12.75" size="1.778" layer="28" rot="MR180" display="off"/>
+</element>
+<element name="C12" library="rcl" package="C0603" value="2p2" x="6.75" y="15.25" rot="MR180">
+<attribute name="PARTNO" value="CL10C2R2CB8NNNC" x="6.75" y="15.25" size="1.778" layer="28" rot="MR180" display="off"/>
+</element>
+<element name="Q1" library="pyboard" package="TXC-SMD-50X32" value="8MHz" x="16" y="10.25">
+<attribute name="PARTNO" value="AA-8.000MALV-T" x="16" y="10.25" size="1.778" layer="27" display="off"/>
+</element>
+<element name="Q2" library="pyboard" package="TXC-SMD-32X15" value="32.768kHz" x="9.75" y="14" rot="MR270">
+<attribute name="PARTNO" value="ABS07-120-32.768KHZ-T" x="9.75" y="14" size="1.778" layer="28" rot="MR270" display="off"/>
+</element>
+<element name="U1" library="pyboard" package="SOT-23-5" value="MCP1802" x="24.75" y="30.5" rot="MR270">
+<attribute name="PARTNO" value="MCP1802T-3302I/OT" x="24.75" y="30.5" size="1.778" layer="28" rot="MR270" display="off"/>
+</element>
+<element name="C16" library="rcl" package="C0603" value="2u2" x="28.25" y="30.5" rot="MR270">
+<attribute name="PARTNO" value="LMK107B7225KA-T" x="28.25" y="30.5" size="1.778" layer="28" rot="MR270" display="off"/>
+</element>
+<element name="C17" library="rcl" package="C0603" value="2u2" x="27.5" y="27.75" rot="MR180">
+<attribute name="PARTNO" value="LMK107B7225KA-T" x="27.5" y="27.75" size="1.778" layer="28" rot="MR180" display="off"/>
+</element>
+<element name="D1" library="pyboard" package="SOD-123" value="1N5819" x="24" y="38.25" rot="MR180">
+<attribute name="PARTNO" value="1N5819HW-7-F" x="24" y="38.25" size="1.778" layer="28" rot="MR180" display="off"/>
+</element>
 <element name="R12" library="rcl" package="R0603" value="100k" x="27.25" y="26.75" smashed="yes" rot="R180">
 <attribute name="NAME" x="27.885" y="26.115" size="1.27" layer="25" rot="R180"/>
 <attribute name="VALUE" x="25.75" y="26" size="1.27" layer="27" rot="R270"/>
+<attribute name="PARTNO" value="RC0603JR-07100KL" x="27.25" y="26.75" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R13" library="rcl" package="R0603" value="100k" x="6.35" y="26.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="6.985" y="27.135" size="1.27" layer="25" rot="R270"/>
 <attribute name="VALUE" x="7.25" y="27.5" size="1.27" layer="27" rot="R270"/>
+<attribute name="PARTNO" value="RC0603JR-07100KL" x="6.35" y="26.5" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R14" library="rcl" package="R0603" value="100k" x="6.6" y="25.5" smashed="yes" rot="MR270">
 <attribute name="NAME" x="5.965" y="26.135" size="1.27" layer="26" rot="MR270"/>
 <attribute name="VALUE" x="5.115" y="23.755" size="1.27" layer="28" rot="MR180"/>
+<attribute name="PARTNO" value="RC0603JR-07100KL" x="6.6" y="25.5" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="R15" library="rcl" package="R0603" value="100k" x="13.75" y="6.5" smashed="yes" rot="MR90">
 <attribute name="NAME" x="14.385" y="5.865" size="1.27" layer="26" rot="MR90"/>
 <attribute name="VALUE" x="12.905" y="8.385" size="1.27" layer="28" rot="MR270"/>
+<attribute name="PARTNO" value="RC0603JR-07100KL" x="13.75" y="6.5" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
-<element name="U$1" library="pyboard" package="LTST-BILED-15X16" value="LTST-C195KGJRKT" x="28.1" y="21.4" rot="R270"/>
-<element name="U$7" library="pyboard" package="HRS-USB-ZX62D-AB-5P8-PKG" value="USB-MICRO-AB" x="24" y="38.675" rot="R180"/>
-<element name="JBL" library="pinhead" package="1X01" value="1" x="3.03" y="2.54"/>
-<element name="JBR4" library="pinhead" package="1X01" value="1" x="30.97" y="2.54"/>
-<element name="JPOW" library="pinhead" package="2X04" value="8" x="27.16" y="6.35" rot="R270"/>
-<element name="JBOT" library="pinhead" package="1X08" value="8" x="14.46" y="2.54"/>
-<element name="JBR3" library="pinhead" package="1X01" value="1" x="30.97" y="5.08"/>
-<element name="JBR2" library="pinhead" package="1X01" value="1" x="30.97" y="7.62"/>
-<element name="JBR1" library="pinhead" package="1X01" value="1" x="30.97" y="10.16"/>
-<element name="JLEFT" library="pinhead" package="1X14" value="14" x="3.03" y="21.59" rot="R270"/>
-<element name="JRIGHT" library="pinhead" package="1X11" value="11" x="30.97" y="25.4" rot="R270"/>
-<element name="R16" library="rcl" package="R0603" value="560R" x="24.75" y="26.5" rot="MR270"/>
+<element name="U$1" library="pyboard" package="LTST-BILED-15X16" value="LTST-C195KGJRKT" x="28.1" y="21.4" rot="R270">
+<attribute name="PARTNO" value="LTST-C195KGJRKT" x="28.1" y="21.4" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="U$7" library="pyboard" package="HRS-USB-ZX62D-AB-5P8-PKG" value="USB-MICRO-AB" x="24" y="38.675" rot="R180">
+<attribute name="PARTNO" value="ZX62D-AB-5P8" x="24" y="38.675" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="JBL" library="pinhead" package="1X01" value="1" x="3.03" y="2.54">
+<attribute name="BOM" value="EXCLUDE" x="3.03" y="2.54" size="1.778" layer="27" display="off"/>
+</element>
+<element name="JBR4" library="pinhead" package="1X01" value="1" x="30.97" y="2.54">
+<attribute name="BOM" value="EXCLUDE" x="30.97" y="2.54" size="1.778" layer="27" display="off"/>
+</element>
+<element name="JPOW" library="pinhead" package="2X04" value="8" x="27.16" y="6.35" rot="R270">
+<attribute name="BOM" value="EXCLUDE" x="27.16" y="6.35" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="JBOT" library="pinhead" package="1X08" value="8" x="14.46" y="2.54">
+<attribute name="BOM" value="EXCLUDE" x="14.46" y="2.54" size="1.778" layer="27" display="off"/>
+</element>
+<element name="JBR3" library="pinhead" package="1X01" value="1" x="30.97" y="5.08">
+<attribute name="BOM" value="EXCLUDE" x="30.97" y="5.08" size="1.778" layer="27" display="off"/>
+</element>
+<element name="JBR2" library="pinhead" package="1X01" value="1" x="30.97" y="7.62">
+<attribute name="BOM" value="EXCLUDE" x="30.97" y="7.62" size="1.778" layer="27" display="off"/>
+</element>
+<element name="JBR1" library="pinhead" package="1X01" value="1" x="30.97" y="10.16">
+<attribute name="BOM" value="EXCLUDE" x="30.97" y="10.16" size="1.778" layer="27" display="off"/>
+</element>
+<element name="JLEFT" library="pinhead" package="1X14" value="14" x="3.03" y="21.59" rot="R270">
+<attribute name="BOM" value="EXCLUDE" x="3.03" y="21.59" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="JRIGHT" library="pinhead" package="1X11" value="11" x="30.97" y="25.4" rot="R270">
+<attribute name="BOM" value="EXCLUDE" x="30.97" y="25.4" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="R16" library="rcl" package="R0603" value="560R" x="24.75" y="26.5" rot="MR270">
+<attribute name="PARTNO" value="RC0603FR-07560RL" x="24.75" y="26.5" size="1.778" layer="28" rot="MR270" display="off"/>
+</element>
 <element name="R17" library="rcl" package="R0603" value="10k" x="12.25" y="11" smashed="yes" rot="MR270">
 <attribute name="NAME" x="11.615" y="11.635" size="1.27" layer="26" rot="MR270"/>
 <attribute name="VALUE" x="11.115" y="13.905" size="1.27" layer="28" rot="MR180"/>
+<attribute name="PARTNO" value="RC0603JR-0710KL" x="12.25" y="11" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
-<element name="C18" library="rcl" package="C0603" value="4u7" x="6.25" y="7" rot="R90"/>
-<element name="R18" library="rcl" package="R0603" value="100k" x="21.45" y="21.9" rot="MR270"/>
-<element name="R19" library="rcl" package="R0603" value="100k" x="19.2" y="34.5" rot="R270"/>
+<element name="C18" library="rcl" package="C0603" value="4u7" x="6.25" y="7" rot="R90">
+<attribute name="PARTNO" value="CL10B475KQ8NQNC" x="6.25" y="7" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="R18" library="rcl" package="R0603" value="100k" x="21.45" y="21.9" rot="MR270">
+<attribute name="PARTNO" value="RC0603JR-07100KL" x="21.45" y="21.9" size="1.778" layer="28" rot="MR270" display="off"/>
+</element>
+<element name="R19" library="rcl" package="R0603" value="100k" x="19.2" y="34.5" rot="R270">
+<attribute name="PARTNO" value="RC0603JR-07100KL" x="19.2" y="34.5" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="NC">
@@ -3332,24 +3425,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="9.5" y1="24.35" x2="11" y2="24.25" width="0.2" layer="1"/>
 </signal>
 </signals>
-<errors>
-<approved hash="1,20,4e7a7808792b4f59"/>
-<approved hash="4,1,1d6e5998f7f2c702"/>
-<approved hash="4,1,b057b0a0d3c5112d"/>
-<approved hash="4,1,ef4aefbc0ece4c26"/>
-<approved hash="4,1,c6b20244581ea8ee"/>
-<approved hash="5,1,1af4ce3fbfb2dfe7"/>
-<approved hash="5,1,e27e8b8fb97cfc8e"/>
-<approved hash="5,1,669fcbacb2b01edb"/>
-<approved hash="19,1,c92f7a8c04e3b74f"/>
-<approved hash="6,1,9a9265a75904d7c6"/>
-<approved hash="6,1,f304ccf8cfd9f025"/>
-<approved hash="6,1,03d1957ecf96691d"/>
-<approved hash="5,1,636b0a84f6de65da"/>
-<approved hash="5,1,787f99d22b78361c"/>
-<approved hash="4,16,fcee5518f372a69a"/>
-<approved hash="4,16,ca37a3c0f99aac72"/>
-</errors>
 </board>
 </drawing>
 </eagle>
